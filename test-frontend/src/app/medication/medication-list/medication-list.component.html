@@ -1,0 +1,55 @@
+<nz-table #medicationTable [nzData]="medicationList" [nzPageSize]="5">
+    <thead>
+        <tr>
+            <th nzCustomFilter nzShowSort [(nzSort)]="mapOfSort.name" (nzSortChange)="sort('name', $event)">{{ 'MEDICATION.NAME' | translate }}
+                <i nz-th-extra class="ant-table-filter-icon" nz-icon nz-dropdown #dropdown="nzDropdown" nzType="search"
+                    [nzDropdownMenu]="menu" [class.ant-table-filter-open]="dropdown.nzVisible" nzTrigger="click"
+                    nzPlacement="bottomRight" [nzClickHide]="false" nzTableFilter></i>
+            </th>
+            <th nzShowSort [(nzSort)]="mapOfSort.dosage" (nzSortChange)="sort('dosage', $event)">
+                {{ 'MEDICATION.DOSAGE' | translate }}
+            </th>
+            <th nzShowSort [(nzSort)]="mapOfSort.unit" (nzSortChange)="sort('unit', $event)">
+                {{ 'MEDICATION.UNIT' | translate }}
+            </th>
+            <th nzShowSort [(nzSort)]="mapOfSort.initialAmount" (nzSortChange)="sort('initialAmount', $event)">
+                {{ 'MEDICATION.INITIAL_AMOUNT' | translate }}
+            </th>
+            <th nzShowSort [(nzSort)]="mapOfSort.currentAmount" (nzSortChange)="sort('currentAmount', $event)">
+                {{ 'MEDICATION.CURRENT_AMOUNT' | translate }}
+            </th>
+            <th nzShowSort [(nzSort)]="mapOfSort.averagePrice" (nzSortChange)="sort('averagePrice', $event)">
+                {{ 'MEDICATION.AVERAGE_PRICE' | translate }}
+            </th>
+            <th>
+                {{ 'MEDICATION.ACTIONS' | translate }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of medicationTable.data">
+            <td>{{ data.name }}</td>
+            <td>{{ data.dosage }}</td>
+            <td>{{ data.unit_measurement }}</td>
+            <td>{{ data.initialAmount }}</td>
+            <td>{{ data.currentAmount }}</td>
+            <td>{{ data.averagePrice }}</td>
+            <td>
+                <button nz-button nzType="default" (click)="onEditClick(data)">{{ 'BUTTONS.EDIT' | translate }}</button>
+                <nz-divider nzType="vertical"></nz-divider>
+                <button nz-button nzType="primary"
+                    (click)="onMovimentClick(data)">{{ 'BUTTONS.MOVIMENTS' | translate }}</button>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>
+
+<nz-dropdown-menu #menu="nzDropdownMenu">
+    <div class="search-box">
+        <input type="text" nz-input placeholder="{{ 'BUTTONS.SEARCH' | translate }}" [(ngModel)]="searchValue" />
+        <button nz-button nzSize="small" nzType="primary" (click)="search()" class="search-button">
+            {{ 'BUTTONS.SEARCH' | translate }}
+        </button>
+        <button nz-button nzSize="small" (click)="reset()">Reset</button>
+    </div>
+</nz-dropdown-menu>

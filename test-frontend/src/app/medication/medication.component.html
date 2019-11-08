@@ -1,0 +1,14 @@
+<div class="main-content">
+    <div nz-row nzType="flex" nzJustify="center" [nzGutter]="16">
+        <div nz-col [nzMd]="16" [nzSm]="24" class="card-content">
+            <app-medication-list [(medicationList)]="medicationList" (editClick)="onEditClick($event)" (movimentClick)="onMovimentClick($event)"></app-medication-list>
+        </div>
+    </div>
+</div>
+
+<app-medication-form #medicationForm></app-medication-form>
+<app-medication-storage-form #storageForm></app-medication-storage-form>
+
+<nz-affix class="float-action-button">
+    <button nz-button nzType="primary" nzSize="large" nzShape="circle" (click)="addMedication()"><i nz-icon nzType="plus" nzTheme="outline"></i></button>
+  </nz-affix>

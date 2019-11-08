@@ -1,0 +1,35 @@
+{
+    "APP_TITLE": "Medication Stock",
+    "MEDICATION": {
+        "TITLE": "Medicamento",
+        "NAME": "Nome",
+        "NAME_PLACEHOLDER": "Informe o nome do medicamento",
+        "DOSAGE": "Dosagem",
+        "DOSAGE_PLACEHOLDER": "Informe a dosagem",
+        "UNIT": "Unidade de Medida",
+        "UNIT_PLACEHOLDER": "Informe unidade de medida",
+        "INITIAL_AMOUNT": "Quantidade Inicial",
+        "INITIAL_AMOUNT_PLACEHOLDER": "Informe quantidade inicial",
+        "CURRENT_AMOUNT": "Quantidade Atual",
+        "AVERAGE_PRICE": "Valor Médio",
+        "ACTIONS": "Ações"
+    },
+    "STORAGE": {
+        "TITLE": "Movimentação",
+        "AMOUNT_QUARTER_1": "Quantidade do primeiro trimestre",
+        "VALUE_QUARTER_1": "Valor total do primeiro trimestre", 
+        "AMOUNT_QUARTER_2": "Quantidade do segundo trimestre",
+        "VALUE_QUARTER_2": "Valor total do segundo trimestre",
+        "AMOUNT_QUARTER_3": "Quantidade do terceiro trimestre",
+        "VALUE_QUARTER_3": "Valor total do terceiro trimestre",
+        "AMOUNT_QUARTER_4": "Quantidade do quarto trimestre",
+        "VALUE_QUARTER_4": "Valor total do quarto trimestre"
+    },
+    "BUTTONS": {
+        "SAVE": "Salvar",
+        "CANCEL": "Cancelar",
+        "EDIT": "Editar",
+        "MOVIMENTS": "Movimentação",
+        "SEARCH": "Pesquisar"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "APP_TITLE": "Medication Stock",
+    "MEDICATION": {
+        "TITLE": "Medication",
+        "NAME": "Name",
+        "NAME_PLACEHOLDER": "Input a name",
+        "DOSAGE": "Dosage",
+        "DOSAGE_PLACEHOLDER": "Input a dosage",
+        "UNIT": "Measurement Unit",
+        "UNIT_PLACEHOLDER": "Input a measurement unit",
+        "INITIAL_AMOUNT": "Initial Amount",
+        "INITIAL_AMOUNT_PLACEHOLDER": "Input a initial amount",
+        "CURRENT_AMOUNT": "Current amount",
+        "AVERAGE_PRICE": "Average Price",
+        "ACTIONS": "Actions"
+    },
+    "STORAGE": {
+        "TITLE": "Movement",
+        "AMOUNT_QUARTER_1": "Amount of the first quarter",
+        "VALUE_QUARTER_1": "Price of the first quarter", 
+        "AMOUNT_QUARTER_2": "Amount of the second quarter",
+        "VALUE_QUARTER_2": "Price of the second quarter", 
+        "AMOUNT_QUARTER_3": "Amount of the third quarter",
+        "VALUE_QUARTER_3": "Price of the third quarter",
+        "AMOUNT_QUARTER_4": "Amount of the fourth quarter",
+        "VALUE_QUARTER_4": "Price of the fourth quarter"
+    },
+    "BUTTONS": {
+        "SAVE": "Save",
+        "CANCEL": "Cancel",
+        "EDIT": "Edit",
+        "MOVIMENTS": "Movement",
+        "SEARCH": "Search"
+    }
+}
